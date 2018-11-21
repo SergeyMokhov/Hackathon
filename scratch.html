@@ -1,0 +1,36 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="screen">
+  <div id="inScreenPadding">
+    <div>
+      <input type="text" placeholder="Activity / Place" id="searchbar"/>
+      <div id="button-holder">
+        <img src="img/Search_256.png"/>
+      </div>
+    </div>
+    <div id="filtersBorder">
+      <b>Filter your results</b><br><br>
+      Location:
+      <div class="filterGroup">
+        <input type="radio" name="location" checked> Near my current location<br>
+        <input type="radio" name="location"> Select location<br>
+      </div>
+      Date:
+      <div class="filterGroup">
+        <input type="radio" name="date" checked> Open right now<br>
+        <input type="radio" name="date"> Pick a date<br>
+      </div>
+      Type of activity:
+      <div class="filterGroup">
+        <input type="checkbox"> Indoor <input type="checkbox"> Outdoor
+        <input type="checkbox"> Outdoor, but for lazy people
+        <input type="checkbox"> Child friendly <input type="checkbox"> 18+
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
