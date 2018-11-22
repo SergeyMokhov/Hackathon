@@ -6,12 +6,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 @{
-    ViewBag.Title = "Suggestion";
+    ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div id="searchbarHolder">
-    
+
     <h2>Suggestions</h2>
 
     <div class="box">
@@ -56,41 +56,41 @@
     <tbody>
         <tr>
             <th scope="row" class="tdtext">1</th>
-            <td class="tdtext" onclick="window.location.href = '@(Url.Action("Result", "Result", new { param = "mississauga" }))'">
-                Lakeview Golf Course
+            <td class="tdtext" onclick="window.location.href = '@(Url.Action("Index", "NextResult", new { param = "milton" }))'">
+                Glen Eden
             </td>
-            <td class="tdtext">Mississauga</td>
-            <td><img id="weatherIcon" src="~/img/sunny.svg" /></td>
+            <td class="tdtext">Milton</td>
+            <td><img id="weatherIcon" src="~/img/snow.svg" /></td>
         </tr>
         <tr>
             <th scope="row" class="tdtext">2</th>
-            <td class="tdtext" onclick="window.location.href = '@(Url.Action("Result", "Result", new { param = "mississauga" }))'">
-                Credit Valley Golf and Country Club
+            <td class="tdtext" onclick="window.location.href = '@(Url.Action("Index", "NextResult", new { param = "toronto" }))'">
+                Freestyle Skiing Ontario
             </td>
-            <td class="tdtext">Mississauga</td>
+            <td class="tdtext">Osler</td>
             <td><img id="weatherIcon" src="~/img/sunnycloudy.svg" /></td>
         </tr>
         <tr>
             <th scope="row" class="tdtext">3</th>
-            <td class="tdtext" onclick="window.location.href = '@(Url.Action("Result", "Result", new { param = "mississauga" }))'">
-                BraeBen Golf Course
+            <td class="tdtext" onclick="window.location.href = '@(Url.Action("Index", "NextResult", new { param = "mississauga" }))'">
+                Trakkers Cross-Country Ski Clb
             </td>
-            <td class="tdtext">Brampton</td>
-            <td><img id="weatherIcon" src="~/img/windy.svg" /></td>
+            <td class="tdtext">Toronto</td>
+            <td><img id="weatherIcon" src="~/img/sunnyrainy.svg" /></td>
         </tr>
         <tr>
             <th scope="row" class="tdtext">4</th>
-            <td class="tdtext" onclick="window.location.href = '@(Url.Action("Result", "Result", new { param = "mississauga" }))'">
-                Grand Highland Golf Club
+            <td class="tdtext" onclick="window.location.href = '@(Url.Action("Index", "NextResult", new { param = "mississauga" }))'">
+                Alpine Indoor Ski and Snowboard Training Centre
             </td>
-            <td class="tdtext">Toronto</td>
-            <td><img id="weatherIcon" src="~/img/snow.svg" /></td>
+            <td class="tdtext">Mississauga</td>
+            <td><img id="weatherIcon" src="~/img/sunnythunder.svg" /></td>
         </tr>
     </tbody>
 </table>
 
 <div class="mapouter">
-    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Lakeview+Golf+Course&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">crocothemes.net</a></div>
+    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Glen+Eden&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">crocothemes.net</a></div>
     <style>
         .mapouter {
             text-align: right;

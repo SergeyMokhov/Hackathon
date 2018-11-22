@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace WebApplication.Controllers
 {
-    public class ResultController : Controller
+    public class NextSuggestionController : Controller
     {
-        // GET: Result
-        public ActionResult Result()
+        // GET: NextSuggestion
+        public ActionResult Index(String searchInpu)
         {
             return View();
         }

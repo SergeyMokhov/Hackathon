@@ -127,6 +127,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NextResultController.cs" />
+    <Compile Include="Controllers\NextSuggestionController.cs" />
     <Compile Include="Controllers\ResultController.cs" />
     <Compile Include="Controllers\SuggestionController.cs" />
     <Compile Include="Global.asax.cs">
@@ -145,13 +147,24 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\branding.css" />
+    <Content Include="Content\pelm-en.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Img\getout_all_caps.png" />
+    <Content Include="Img\map_Lakeview_Golf_Course.png" />
+    <Content Include="Img\ResortConditions.PNG" />
     <Content Include="Img\Search_256.png" />
     <Content Include="Img\search_twn.png" />
+    <Content Include="Img\snow.svg" />
+    <Content Include="Img\sunny.svg" />
+    <Content Include="Img\sunnycloudy.svg" />
+    <Content Include="Img\sunnyrainy.svg" />
+    <Content Include="Img\sunnythunder.svg" />
     <Content Include="Img\twn.png" />
+    <Content Include="Img\twnlogo.png" />
+    <Content Include="Img\windy.svg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -181,6 +194,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Suggestion\Suggestion.cshtml" />
     <Content Include="Views\Result\Result.cshtml" />
+    <Content Include="Views\NextSuggestion\Index.cshtml" />
+    <Content Include="Views\NextResult\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

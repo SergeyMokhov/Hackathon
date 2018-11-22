@@ -1,0 +1,41 @@
+Hi! We are the Team Explorers!
+We are solving "We're Engaged!", "How Can We Help You?" and "Permission Granted" problems.
+We have created a proof of concept application that helps you find activities and places to go.
+
+Any plans for the weekend?
+Want to have some outdoor fun, but it is raining?
+Your kids are not allowed in your favorite bar?
+
+No problem, our search engine will help you to GET OUT!
+The idea is to use weather and other environmental data to narrow down list of places and activities you can go to. 
+Or suggest you a place to go based on your preferences and weather.
+
+We use mock data for the demo.
+Let me show it to you.
+
+SREEN 1. SEARCH
+Lets say you are in Toronto and planning your weekend.
+You open our app and type "Golf next week near Toronto".
+
+As you can see, even though the Golf course in Toronto is the closest to you, it is the last place we suggest you to go to.
+We know it is snowing in Toronto.
+But there is no wind or rain expected in Mississauga, that is why we ranked it to be the best place to go for golfing.
+(And obviously there is no way it could rain in an indoor Driving Range.)
+
+Or, for example you are an outdoor enthusiast, but your favorite park is packed. Just turn on "follow me" in your profiles. 
+We will get your current location and suggest you a place to go near by. It could be a park or trail during summer and ski hill during winter all based on places you go to most frequently.
+
+SCREEN 3. NOTIFICATION
+Want to go skiing but it is too warm? Want to go mushroom hunting, but it did not rain in the forest for a long time?
+Let us notify you when it is perfect time to do it.
+
+Select yout favorite place, weather condition and create a notification.
+We'll let you know when your favorite ski hill will be covered by fresh snow.
+Or that it just rained in the forest and next couple days will be warm, so the mushrooms are growing quickly.
+
+
+
+End notes:
+	1. A place to go or thing to do search / recommendation engine.
+	2. Weather and evironmental data combined with places and activities.
+	3. Results are based on user profile and his activity history and weather.

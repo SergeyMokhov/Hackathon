@@ -9,6 +9,32 @@
     margin: 2%;
 }
 
+.box {
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.skibox {
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50em;
+}
+
+.applogobox {
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom:20%;
+}
+
+
+.tdtext {
+    vertical-align: middle;
+    font-size: 18px;
+}
+
 #logo {
     display: block;
     margin-left: auto;
@@ -16,12 +42,25 @@
     margin-top: 15%;
 }
 
+#applogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 20%;
+    height: 20%;
+}
+
+#weatherIcon {
+    width: 30%;
+    height: 30%;
+}
+
 #searchbarHolder {
     width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20%;
 }
 
 #hint {

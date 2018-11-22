@@ -25,11 +25,16 @@ namespace WebApplication
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/Content/branding.css"));
+                      "~/Content/branding.css",
+                      "~/Content/pelm-en.css"));
             bundles.Add(new StyleBundle("~/Img").Include(
                       "~/Img/Search_256.png",
                       "~/Img/search_twn.png",
-                      "~/Img/twn.png"));
+                      "~/Img/twnlogo.png",
+                      "~/Img/getout_all_caps.png",
+                      "~/Img/windy.svg",
+                      "~/Img/ResortConditions.png",
+                      "~/Img/map_Lakeview_Golf_Course.png"));
         }
     }
 }
