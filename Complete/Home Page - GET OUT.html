@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://localhost:63308/Home/Index -->
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - GET OUT</title>
+    <link href="./Home Page - GET OUT_files/bootstrap.css" rel="stylesheet">
+<link href="./Home Page - GET OUT_files/site.css" rel="stylesheet">
+<link href="./Home Page - GET OUT_files/branding.css" rel="stylesheet">
+
+    <script src="./Home Page - GET OUT_files/modernizr-2.8.3.js.download"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:63308/">GET OUT</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:63308/">Home</a></li>
+                    <li><a href="http://localhost:63308/Home/About">About</a></li>
+                    <li><a href="http://localhost:63308/Home/Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        
+
+<script src="./Home Page - GET OUT_files/jquery-3.3.1.min.js.download" type="text/javascript"></script>
+<link rel="stylesheet" href="./Home Page - GET OUT_files/jquery-ui.css">
+<script src="./Home Page - GET OUT_files/jquery-ui.js.download"></script>
+<link rel="stylesheet" href="./Home Page - GET OUT_files/font-awesome.min.css">
+
+
+
+
+<!--
+<div>
+    <div>
+        <h2>Activity/Place search</h2>
+    </div>
+
+    <div>
+        <form method="post" action="/Suggestion/Suggestion">
+            <input id="searchInput" name="searchInput" type="text" value="" />
+            <script>
+        $("#searchInput").autocomplete({
+    source: function (request, response) {
+        $.ajax({
+            url: '/Home/GetSearchValue',
+            dataType: "json",
+            data: { search: $("#searchInput").val() },
+            success: function (data) {
+                response($.map(data, function (item) {
+                    return { label: item.Name, value: item.Name };
+                }))
+            }
+        })
+    },
+    error: function (xhr, status, error) {
+        alert("Error search");
+    }
+});
+            </script>
+            <br />
+            <br />
+            <br />
+            <div>
+                <input type="submit" value="Search" />
+            </div>
+        </form>
+    </div>
+</div>
+-->
+
+
+    <div>
+        <img id="logo" src="./Home Page - GET OUT_files/twn.png">
+    </div>
+    <div id="searchbarHolder">
+        <!--
+    <input type="text" placeholder="Try: 'Golf next week near Toronto'" id="searchbar" />
+        -->
+
+
+        <div>
+            <form method="post" action="http://localhost:63308/Suggestion/Suggestion">
+                <input id="searchInput" name="searchInput" type="text" value="" class="ui-autocomplete-input" autocomplete="off">
+
+                <script>
+        $("#searchInput").autocomplete({
+    source: function (request, response) {
+        $.ajax({
+            url: '/Home/GetSearchValue',
+            dataType: "json",
+            data: { search: $("#searchInput").val() },
+            success: function (data) {
+                response($.map(data, function (item) {
+                    return { label: item.Name, value: item.Name };
+                }))
+            }
+        })
+    },
+    error: function (xhr, status, error) {
+        alert("Error search");
+    }
+});
+                </script>
+         
+         
+                    <!--<input type="submit" value="Search" />-->
+                    <button type="submit"><i class="fa fa-search"></i></button>
+         
+            </form>
+        </div>
+
+    </div>
+</div><ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div>
+
+        <hr>
+        <footer>
+            <p>© 2018 - Pelmorex Corp.</p>
+        </footer>
+    
+
+    <script src="./Home Page - GET OUT_files/jquery-3.3.1.js.download"></script>
+
+    <script src="./Home Page - GET OUT_files/bootstrap.js.download"></script>
+
+    
+
+
+</body></html>
