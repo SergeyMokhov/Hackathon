@@ -135,3 +135,68 @@ body {
 .info {
     margin: 5px 0px;
 }
+.place-title {
+
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.detailed-metrics {
+ float:left;
+ padding:0;
+ height:auto;
+ font-family:'DIN-Medium',sans-serif;
+ font-size:29px;
+ color:#333;
+}
+.detailed-metrics div {
+ text-align:center;
+ float:left;
+ position:relative;
+ margin-right:15px;
+}
+.detailed-metrics div:last-child {
+ margin-right:0px;
+}
+.detailed-metrics p {
+ color:black;
+ text-align:center;
+ font-size:16px;
+ margin-top:4px;
+}
+.detailed-metrics span {
+ color:black;
+ display:inline;
+ width:50px;
+ font-family:'DIN-Bold',sans-serif;
+ font-size:14px;
+ text-align:center;
+ position:relative;
+ z-index:1;
+ letter-spacing:0.1px;
+}
+#weather-info .current-weather .detailed-reports .detailed-metrics i {
+ color:#fff;
+ filter:alpha(opacity=75);
+ opacity:0.75;
+ top:0;
+ left:4px;
+ font-size:30px;
+}
+#weather-info .current-weather .detailed-reports .detailed-metrics em {
+ color:white;
+ display:inline;
+ font-style:inherit;
+ padding-left:3px;
+}
+body.schoolday #weather-info .current-weather .detailed-reports .detailed-metrics {
+ float:none;
+}
+#weather-info  .forecastitems.first,#weather-info  .forecastitems.last {
+ border-right-color:#FFF;
+}
+#twn-feeds li p.first {
+ margin:0 0 3px;
+}
