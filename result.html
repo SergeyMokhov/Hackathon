@@ -1,51 +1,96 @@
-<html>
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+      style="">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta charset="UTF-8">
     <title>Lakeview Golf Course</title>
-    <link rel="stylesheet" href="css/pelm-en.css">
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <link href="Content/site.css" rel="stylesheet">
+    <link href="Content/branding.css" rel="stylesheet">
+    <link href="Content/pelm-en.css" rel="stylesheet">
 </head>
 <body>
 <div>
-    <div class="clearfix" style="position: relative; margin-top: 10px; padding: 10px; height: 300px; width: 1400px">
-        <img src="img/map_Lakeview_Golf_Course.png" style="position:relative: margin: 30px 0px 0px 0px; height: 100%; float: right">
-        <div style="position:relative; padding-top: 10px; width: 30%;">
-            <div style="position:relative;">
-                <div class="info place-title">Lakeview Golf Course</div>
-                <div class="info">Mississauga, Ontario</div>
-                <div class="info"> 18 Holes, Public</div>
-                <div class="info"> 905-615-4653</div>
-                <div class="info">1190 Dixie Rd, Mississauga, ON L5E 2P4</div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://localhost:63308/">GET OUT</a>
             </div>
-            <div id="detailed-metrics" class="detailed-metrics clearfix"
-                 style="margin-top: 30px; width: 9999px; position: relative;"><!--googleoff: all-->
-                <div class="wind first bx-child" style="width: 75px; float: left; list-style: outside none none;"><i
-                        class="icon icon-wind-n"></i>
-                    <p class="metric">Wind</p><span>20<em>km/h</em> N</span></div>
-                <div class="windgust bx-child" style="width: 95px; float: left; list-style: outside none none;"><i
-                        class="icon-wind-gust"></i>
-                    <p class="metric">Wind gust</p><span>30<em>km/h</em></span></div>
-                <div class="humidity bx-child" style="width: 75px; float: left; list-style: outside none none;"><i
-                        class="icon icon-humidity-high"></i>
-                    <p class="metric">Humidity</p><span>52%</span></div>
-                <div class="sunrise bx-child" style="width: 75px; float: left; list-style: outside none none;"><i
-                        class="icon-sunrise"></i>
-                    <p class="metric">Sunrise</p><span>7:20 AM</span></div>
-                <div class="sunset bx-child" style="width: 75px; float: left; list-style: outside none none;"><i
-                        class="icon-sunset"></i>
-                    <p class="metric">Sunset</p><span>4:47 PM</span></div>
-                <div class="pressure bx-child" style="width: 75px; float: left; list-style: outside none none;"><i
-                        class="icon icon-pressure-medium-high"></i>
-                    <div class="pressure-icon"><i class="icon-2"></i></div>
-                    <p class="metric">Pressure</p><span class="icon-pressure_tend-2">103.7<em>kPa</em></span></div>
-                <div class="visibility bx-child" style="width: 75px; float: left; list-style: outside none none;"><i
-                        class="icon-visibility-unlimited"></i>
-                    <p class="metric">Visibility</p><span>24<em>km</em></span></div>
-                <div class="ceiling bx-child" style="width: 75px; float: left; list-style: outside none none;"><i
-                        class="icon-ceiling-unlimited"></i>
-                    <p class="metric">Ceiling</p><span>26000<em>ft</em></span></div><!--googleon: all--></div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:63308/">Home</a></li>
+                    <li><a href="http://localhost:63308/Home/About">About</a></li>
+                    <li><a href="http://localhost:63308/Home/Contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
+    <div class="container body-content">
+        <div>
+            <img id="logo" src="img/twn.png">
+        </div>
+        <br/>
+        <div class="clearfix"
+             style="position: relative; margin: 20px; padding: 10px; height: 30em; ">
+            <div style="position:relative: margin: 30px 0px 0px 0px; height: 100%; float: right;">
+                <img src="img/map_Lakeview_Golf_Course.png" style="height:100%">
+            </div>
+            <div style="position:relative; padding-top: 10px;">
+                <div class="visible" id="masthead" style="">
+                    <h1 style="font-size: 24px;"><span id="h1_title" style="font-size: 42px;">	Lakeview Golf Course, ON <script
+                            type="text/javascript">window._config.masthead_has_content = true;</script>	</span>
+                    </h1>
+                    <div id="golf-address">
+                        <span class="info"
+                              id="golf-title">1190 Dixie Road, Mississauga, L5B 2P4, Mississauga, Ontario</span>
+                    </div>
+                    <div class="info"> 18 Holes, Public</div>
+                    <div class="info"> 905-615-4653</div>
+                </div>
+                <div class="detailed-metrics" id="detailed-metrics"
+                     style="margin-top: 30px; position: initial; "><!--googleoff: all-->
+                    <div class="wind first bx-child"
+                         style="width: 75px; float: left; list-style: outside none none;"><i
+                            class="icon icon-wind-n"></i>
+                        <p class="metric">Wind</p><span>20<em>km/h</em> N</span></div>
+                    <div class="windgust bx-child" style="width: 95px; float: left; list-style: outside none none;">
+                        <i
+                                class="icon-wind-gust"></i>
+                        <p class="metric">Wind gust</p><span>30<em>km/h</em></span></div>
+                    <div class="humidity bx-child" style="width: 75px; float: left; list-style: outside none none;">
+                        <i
+                                class="icon icon-humidity-high"></i>
+                        <p class="metric">Humidity</p><span>52%</span></div>
+                    <div class="sunrise bx-child" style="width: 75px; float: left; list-style: outside none none;">
+                        <i
+                                class="icon-sunrise"></i>
+                        <p class="metric">Sunrise</p><span>7:20 AM</span></div>
+                    <div class="sunset bx-child" style="width: 75px; float: left; list-style: outside none none;"><i
+                            class="icon-sunset"></i>
+                        <p class="metric">Sunset</p><span>4:47 PM</span></div>
+                    <div class="pressure bx-child" style="width: 75px; float: left; list-style: outside none none;">
+                        <i
+                                class="icon icon-pressure-medium-high"></i>
+                        <div class="pressure-icon"><i class="icon-2"></i></div>
+                        <p class="metric">Pressure</p><span class="icon-pressure_tend-2">103.7<em>kPa</em></span>
+                    </div>
+                    <div class="visibility bx-child"
+                         style="width: 75px; float: left; list-style: outside none none;"><i
+                            class="icon-visibility-unlimited"></i>
+                        <p class="metric">Visibility</p><span>24<em>km</em></span></div>
+                    <div class="ceiling bx-child" style="width: 75px; float: left; list-style: outside none none;">
+                        <i
+                                class="icon-ceiling-unlimited"></i>
+                        <p class="metric">Ceiling</p><span>26000<em>ft</em></span></div><!--googleon: all--></div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

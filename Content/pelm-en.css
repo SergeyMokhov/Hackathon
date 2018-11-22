@@ -134,6 +134,7 @@ body {
 }
 .info {
     margin: 5px 0px;
+    font-size: 18px;
 }
 .place-title {
 
@@ -200,3 +201,7 @@ body.schoolday #weather-info .current-weather .detailed-reports .detailed-metric
 #twn-feeds li p.first {
  margin:0 0 3px;
 }
+
+.container {
+    width: 100%;
+  }
