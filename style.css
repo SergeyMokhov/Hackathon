@@ -1,7 +1,7 @@
 #screen {
   width: 411px;
   height: 731px;
-  background-color: #d6d6d6;
+  background-color: #3E9DEF;
   position: absolute;
 }
 
@@ -10,26 +10,32 @@
 }
 
 #searchbar {
-  border-style: solid;
+  border-top:thin solid #000;
+  border-bottom:thin solid #000;
+  border-right:none;
   border-color: black;
+  background-color: #33587A;
+  border-radius: 10px 0px 0px 10px;
   width: 90%;
   height: 28px;
   float:left;
 }
 
 #button-holder {
-    background-color:#f1f1f1;
-    border-top:thin solid #e5e5e5;
-    box-shadow:1px 1px 1px 1px #e5e5e5;
+    border-top:thin solid #000;
+    border-bottom:thin solid #000;
+    border-left:none;
     cursor:pointer;
     float:right;
     height:27px;
     width:10%;
     text-align:center;
+    border-radius: 0px 10px 10px 0px;
 }
 
 #button-holder img {
     width:20px;
+    border-style: none;
 }
 
 #filtersBorder {
