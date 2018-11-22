@@ -12,13 +12,27 @@ The idea is to use weather and other environmental data to narrow down list of p
 We use mock data for the demo.
 Let me show it to you.
 
+SREEN 1. SEARCH
 Lets say you are in Toronto and planning your weekend.
 You open our app and type "Golf next week near Toronto".
 
+SCREEN 2. SEARCH RESULTS
 As you can see, even though the Golf course in Toronto is the closest to you, it is the last we suggest you to go to. We know it is windy in Toronto and it will start raining in 20 minutes.
 But there is no wind or rain expected in Scarborough, that is why we put it to the first places.
 And obviusly there is no way it could rain in an indoor Drivin Range.
 
 Or, for example you are an outood enthusiast, but your favorite park is packed. Just turn on "follow me". We will get your current location and suggest you a place to go near by. It could be a park or trail during summer and ski hill during winter all based on places you go to most frequently.
 
+SCREEN 3. NOTIFICATION
+Want to go skiing but it is too warm? Want to go mushroom hunting, but it did not rain in the forest for a long time? On vacation and thinking if you need to call your friend and ask him to water you grass?
+Let us notify you when it is perfect time to do it.
 
+Select yout favorite place weather condition and create a notification.
+We'll let you know when there were no rain near your home for a long time. Or that your favorite ski hill will be covered by fresh snow next weekend. Or that it just rained in the forest and next couple days will be warm, so the mushrooms are growing quickly.
+
+
+
+End notes:
+	1. A place to go or thing to do search / recommendation engine.
+	2. Weather and evironmental data combined with places and activities.
+	3. Results are based on user profile and his activity history and weather.
