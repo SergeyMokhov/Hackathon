@@ -1,0 +1,66 @@
+﻿@model IEnumerable<WebApplication.Models.SuggestionModel>
+
+@{
+    ViewBag.Title = "Suggestion";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Suggestion</h2>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Venue</th>
+            <th scope="col">City</th>
+            <th scope="col">Weather</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Andres Golf Club</td>
+            <td>Toronto</td>
+            <td>Raining</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jocol Golf Resort</td>
+            <td>Toronto</td>
+            <td>Slight Showers</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Sergey Driving Range</td>
+            <td>Scarborough</td>
+            <td>Thunderstorm</td>
+            <!--<td><img src=".\A.jpeg" alt="" border=3 height=100 width=300></img></th>-->
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Nishants Driving Range</td>
+            <td>Scarborough</td>
+            <td>Thunderstorm</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="mapouter">
+    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net">crocothemes.net</a></div>
+    <style>
+        .mapouter {
+            text-align: right;
+            height: 500px;
+            width: 600px;
+        }
+
+        .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 500px;
+            width: 600px;
+        }
+    </style>
+</div>
+
