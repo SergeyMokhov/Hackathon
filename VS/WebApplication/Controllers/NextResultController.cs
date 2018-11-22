@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace WebApplication.Controllers
 {
-    public class ResultController : Controller
+    public class NextResultController : Controller
     {
-        // GET: Result
-        public ActionResult Result()
+        // GET: NextResult
+        public ActionResult Index()
         {
             return View();
         }

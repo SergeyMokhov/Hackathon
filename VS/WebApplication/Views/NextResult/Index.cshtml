@@ -1,0 +1,50 @@
+﻿@model WebApplication.Models.ResultModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://ajax.microsoft.com/ajax/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h3>Activity Details</h3>
+
+<div>
+    <div class="clearfix" style="position: relative; margin-top: 10px; padding: 10px; width: 1400px">
+        <div style="position:relative; padding-top: 10px; width: 30%;">
+            <div style="position:relative;">
+                <div class="info place-title">Glen Eden</div>
+                <div class="info">Milton, Ontario</div>
+                <div class="info">Skiing & snowboarding offers 12 trails & a terrain park, plus dining options.</div>
+                <div class="info">905-878-5011</div>
+                <div class="info">5234 Kelso Rd, Milton, ON L9T 2X7</div>
+            </div>
+        </div>
+    </div>
+    <div class="skibox">
+        <img src="~/Img/ResortConditions.png" style="width:100%" />
+    </div>
+
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Glen+Eden&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="600px" height="500px"></iframe>
+        </div>
+        <style>
+            .mapouter {
+                text-align: right;
+                height: 500px;
+                width: 600px;
+            }
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 500px;
+                width: 600px;
+            }
+        </style>
+    </div>
+</div>

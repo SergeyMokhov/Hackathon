@@ -8,16 +8,13 @@
     ViewBag.Title = "Home Page";
 }
 
+<img id="logo" src="~/img/twnlogo.png" />
 
-<!--
-<div>
-    <div>
-        <h2>Activity/Place search</h2>
-    </div>
-
-    <div>
+<div id="searchbarHolder">
+    <div class="box">
         <form method="post" action="@Url.Action("Suggestion", "Suggestion")">
             @Html.TextBox("searchInput")
+
             <script>
         $("#searchInput").autocomplete({
     source: function (request, response) {
@@ -37,54 +34,12 @@
     }
 });
             </script>
-            <br />
-            <br />
-            <br />
-            <div>
-                <input type="submit" value="Search" />
-            </div>
+            <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
+
 </div>
--->
 
-
-    <div>
-        <img id="logo" src="~/img/twn.png" />
-    </div>
-    <div id="searchbarHolder">
-
-
-        <div>
-            <form method="post" action="@Url.Action("Suggestion", "Suggestion")">
-                @Html.TextBox("searchInput")
-
-                <script>
-        $("#searchInput").autocomplete({
-    source: function (request, response) {
-        $.ajax({
-            url: '@Url.Action("GetSearchValue", "Home")',
-            dataType: "json",
-            data: { search: $("#searchInput").val() },
-            success: function (data) {
-                response($.map(data, function (item) {
-                    return { label: item.Name, value: item.Name };
-                }))
-            }
-        })
-    },
-    error: function (xhr, status, error) {
-        alert("Error search");
-    }
-});
-                </script>
-         
-         
-                    <!--<input type="submit" value="Search" />-->
-                    <button type="submit"><i class="fa fa-search"></i></button>
-         
-            </form>
-        </div>
-
-    </div>
+<div class="applogobox">
+    <img id="applogo" src="~/img/getout_all_caps.png" />
 </div>
