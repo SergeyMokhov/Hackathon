@@ -1,0 +1,24 @@
+Hi, we are team X
+We are solving the "We're Engaged!", "How Can We Help You?" and "Permission Granted" problems.
+We have created a proof of concept application that helps to find activities and places to go.
+
+Any plans for the weekend?
+Want to have some outdoor fun, but it is raining?
+Your kids are not allowed in your favorite bar?
+
+No problem, our search engine will help you to GET OUT!
+The idea is to use weather and other environmental data to narrow down list of places and activities you can go to. Or sugegest you a place to go based on your preferences and weather.
+
+We use mock data for the demo.
+Let me show it to you.
+
+Lets say you are in Toronto and planning your weekend.
+You open our app and type "Golf next week near Toronto".
+
+As you can see, even though the Golf course in Toronto is the closest to you, it is the last we suggest you to go to. We know it is windy in Toronto and it will start raining in 20 minutes.
+But there is no wind or rain expected in Scarborough, that is why we put it to the first places.
+And obviusly there is no way it could rain in an indoor Drivin Range.
+
+Or, for example you are an outood enthusiast, but your favorite park is packed. Just turn on "follow me". We will get your current location and suggest you a place to go near by. It could be a park or trail during summer and ski hill during winter all based on places you go to most frequently.
+
+
