@@ -1,0 +1,137 @@
+body {
+ border-top:4px;
+ background-position:50% 38px !important;
+ background-repeat:no-repeat !important;
+ color:#000000;
+ min-width:1048px;
+ transition:0.2s background-position;
+}
+
+@font-face {
+ font-family:'twnicons';
+ src:url("https://s1.twnmm.com/font/fr_ca/r1379/twnicons.eot?v1");
+ src:url("https://s1.twnmm.com/font/fr_ca/r1379/twnicons.eot?v1#iefix") format('embedded-opentype'),url("https://s1.twnmm.com/font/fr_ca/r1379/twnicons.woff2?v1") format('woff2'),url("https://s1.twnmm.com/font/fr_ca/r1379/twnicons.ttf?v1") format('truetype'),url("https://s1.twnmm.com/font/fr_ca/r1379/twnicons.svg?v1#twnicons") format('svg');
+ font-weight:normal;
+ font-style:normal;
+}
+
+[class*="icon-"] {
+ font-family:'twnicons';
+ speak:none;
+ font-style:normal;
+ font-weight:normal;
+ font-variant:normal;
+ text-transform:none;
+ line-height:1;
+ -webkit-font-smoothing:antialiased;
+ -moz-osx-font-smoothing:grayscale;
+}
+
+.icon-wind-noval:before {
+ content:"\e6be";
+}
+.icon-wind-var:before {
+ content:"\e6be";
+}
+.icon-wind-n:before {
+ content:"\e69b";
+}
+.icon-wind-ne:before {
+ content:"\e69c";
+}
+.icon-wind-e:before {
+ content:"\e69f";
+}
+.icon-wind-se:before {
+ content:"\e6a1";
+}
+.icon-wind-s:before {
+ content:"\e6a2";
+}
+.icon-wind-sw:before {
+ content:"\e6a3";
+}
+.icon-wind-w:before {
+ content:"\e6a4";
+}
+.icon-wind-nw:before {
+ content:"\e6a5";
+}
+.icon-wind-gust:before {
+ content:"\e603";
+}
+.icon-water-drop:before {
+ content:"\e605";
+}
+.icon-visibility:before {
+ content:"\e606";
+}
+.icon-visibility-low:before {
+ content:"\e6a6";
+}
+.icon-visibility-medium:before {
+ content:"\e6a7";
+}
+.icon-visibility-unlimited:before {
+ content:"\e6a8";
+}
+.icon-thermometer-warm:before,.icon-health-temperature:before {
+ content:"\e60a";
+}
+.icon-sunset:before {
+ content:"\e68e";
+}
+.icon-sunrise:before {
+ content:"\e68d";
+}
+.icon-precip-start-stop:before {
+ content:"\e600";
+}
+.icon-dew-point:before,.icon-health-dew-point:before {
+ content:"\e642";
+}
+.icon-humidity-2:before {
+ content:"\e631";
+}
+.icon-day:before {
+ content:"\e635";
+}
+.icon-night:before {
+ content:"\e687";
+}
+.icon-pressure:before,.icon-health-temperature:before {
+ content:"\e618";
+}
+.icon-pressure-lowest:before,.icon-pressure-very-low:before {
+ content:"\e6aa";
+}
+.icon-pressure-low:before,.icon-pressure-medium-low:before {
+ content:"\e6ac";
+}
+.icon-pressure-medium:before {
+ content:"\e6ae";
+}
+.icon-pressure-medium-high-2:before,.icon-pressure-medium-high:before,.icon-pressure-high:before {
+ content:"\e6b0";
+}
+.icon-pressure-very-high:before,.icon-pressure-extreme:before {
+ content:"\e6b3";
+}
+.icon-humidity:before,.icon-humidity-high:before,.icon-humidity-low:before,.icon-humidity-medium:before {
+ content:"\e6b6";
+}
+.icon-ceiling:before {
+ content:"\e648";
+}
+.icon-ceiling-unlimited:before,.icon-ceiling-high:before {
+ content:"\e6b9";
+}
+.icon-ceiling-medium:before {
+ content:"\e6bb";
+}
+.icon-ceiling-low:before,.icon-ceiling-very-low:before {
+ content:"\e6bd";
+}
+.info {
+    margin: 5px 0px;
+}
