@@ -7,7 +7,7 @@ Want to have some outdoor fun, but it is raining?
 Your kids are not allowed in your favorite bar?
 
 No problem, our search engine will help you to GET OUT!
-The idea is to use weather and other environmental data to narrow down list of places and activities you can go to. Or sugegest you a place to go based on your preferences and weather.
+The idea is to use weather and other environmental data to narrow down list of places and activities you can go to. Or suggest you a place to go based on your preferences and weather.
 
 We use mock data for the demo.
 Let me show it to you.
