@@ -10,15 +10,14 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div id="searchbarHolder">
+<div>
 
-    <h2>Suggestions</h2>
+    <h3>Suggestions</h3>
 
-    <div class="box">
-        <form method="post" action="@Url.Action("Suggestion", "Suggestion")">
-            @Html.TextBox("searchInput")
+    <form method="post" action="@Url.Action("Suggestion", "Suggestion")" style="width:100%;float:right;">
+        @Html.TextBox("searchInput", null, new { style = "height:27px;width:95%;margin-bottom:2%;", placeholder = " 'Golf next week near Toronto'" })
 
-            <script>
+        <script>
         $("#searchInput").autocomplete({
     source: function (request, response) {
         $.ajax({
@@ -36,13 +35,10 @@
         alert("Error search");
     }
 });
-            </script>
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
-
+        </script>
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
 </div>
-
 
 <table class="table table-striped">
     <thead>

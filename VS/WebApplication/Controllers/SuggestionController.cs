@@ -11,10 +11,16 @@ namespace WebApplication.Controllers
         // GET: Suggestion
         public ActionResult Suggestion(String searchInput)
         {
+            if (searchInput == null)
+            {
+                return new EmptyResult();
+            }
+
             if (searchInput.Contains("ski"))
             {
                 return RedirectToAction("Index", "NextSuggestion");
             }
+
             return View();
         }
     }

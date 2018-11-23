@@ -9,8 +9,9 @@ namespace WebApplication.Controllers
     public class NextSuggestionController : Controller
     {
         // GET: NextSuggestion
-        public ActionResult Index(String searchInpu)
+        public ActionResult Index(String searchInput)
         {
+
             return View();
         }
     }

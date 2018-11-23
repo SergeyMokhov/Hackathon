@@ -23,7 +23,7 @@ namespace WebApplication.Controllers
 
         public JsonResult GetSearchValue(string search)
         {
-            List<String> places = new List<string>(new String[] { "windsor", "milton", "mississauga", "toronto", "thornhill", "oakville", "vaughn" });
+            List<String> places = new List<string>(new String[] { "windsor", "milton", "mississauga", "toronto", "thornhill", "oakville", "vaughn", "golf", "ski" });
             IEnumerable<String> p = places.Where(x => x.StartsWith(search) || search == null).ToList();
             List<PlaceModel> allsearch = p.Select(x => new PlaceModel
             {
@@ -35,7 +35,7 @@ namespace WebApplication.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact Us.";
 
             return View();
         }

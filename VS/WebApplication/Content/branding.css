@@ -1,15 +1,4 @@
-﻿/*#screen {
-    width: 411px;
-    height: 731px;
-    background-color: #3E9DEF;
-    position: absolute;
-}*/
-
-#inScreenPadding {
-    margin: 2%;
-}
-
-.box {
+﻿.box {
     width: 100%;
     text-align: center;
     margin-top: 5%;
@@ -37,9 +26,9 @@
 
 #logo {
     display: block;
-    margin-left: auto;
+    margin-left: 20%;
     margin-right: auto;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 #applogo {
@@ -63,61 +52,6 @@
     margin-right: auto;
 }
 
-#hint {
-    color: #FFF;
-    font-size: 15px;
-}
-
-#searchbar {
-    border-top: thin solid #000;
-    border-bottom: thin solid #000;
-    border-left: none;
-    border-right: none;
-    background-color: #33587A;
-    border-radius: 10px 0px 0px 10px;
-    width: 85%;
-    height: 35px;
-    float: left;
-}
-
-#button-holder {
-    border-top: thin solid #000;
-    border-bottom: thin solid #000;
-    //border-right:thin solid #000;
-    border-left: none;
-    cursor: pointer;
-    float: left;
-    height: 33px;
-    width: 10%;
-    text-align: center;
-    border-radius: 0px 10px 10px 0px;
-}
-
-    #button-holder img {
-        //width:20px;
-        height: 35px;
-        border-style: none;
-    }
-
-/*
-#filtersBorder {
-  border-style: dotted;
-  position: absolute;
-  bottom: 10px;
-  width: 92%;
-  height: 50%;
-  padding: 1%;
-}
-
-.filterGroup{
-  padding: 1% 1% 1% 3%;
-  border-style: none;
-}*/
-
-* {
-    box-sizing: border-box;
-}
-
 /* Style the search field */
 form.example input[type=text] {
     padding: 10px;
@@ -126,6 +60,7 @@ form.example input[type=text] {
     float: left;
     width: 80%;
     background: #f1f1f1;
+    border-radius: 0.5px 0.5px;
 }
 
 /* Style the submit button */
@@ -151,3 +86,4 @@ form.example::after {
     clear: both;
     display: table;
 }
+

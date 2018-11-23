@@ -8,14 +8,12 @@
     ViewBag.Title = "Home Page";
 }
 
-<img id="logo" src="~/img/twnlogo.png" />
+<img src="~/img/twnlogo.png" style="width:20%;height:20%;margin-top:3%;margin-left:15%;margin-bottom:3%"/>
 
-<div id="searchbarHolder">
-    <div class="box">
-        <form method="post" action="@Url.Action("Suggestion", "Suggestion")">
-            @Html.TextBox("searchInput")
+<form method="post" action="@Url.Action("Suggestion", "Suggestion")" style="width:100%;">
+    @Html.TextBox("searchInput", null, new { style = "height:27px;width:50%;margin-bottom:3%;margin-left:5%", placeholder = " 'Golf next week near Toronto'" })
 
-            <script>
+    <script>
         $("#searchInput").autocomplete({
     source: function (request, response) {
         $.ajax({
@@ -33,13 +31,10 @@
         alert("Error search");
     }
 });
-            </script>
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
+    </script>
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
 
-</div>
-
-<div class="applogobox">
-    <img id="applogo" src="~/img/getout_all_caps.png" />
+<div>
+    <img src="~/img/getout_all_caps.png" style="width:20%;height:20%;margin-left:15%;margin-bottom:5%"/>
 </div>
