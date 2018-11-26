@@ -1,0 +1,86 @@
+﻿@model WebApplication.Models.ResultModel
+
+@{
+    ViewBag.Title = "Result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://ajax.microsoft.com/ajax/jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h3>Activity Details</h3>
+
+<div>
+    <div class="clearfix" style="position: relative; margin-top: 10px; padding: 10px; height: 300px; width: 1400px">
+
+        <div style="position:relative; padding-top: 10px; width: 30%;">
+            <div style="position:relative;">
+                <div class="info place-title">Lakeview Golf Course</div>
+                <div class="info">Mississauga, Ontario</div>
+                <div class="info"> 18 Holes, Public</div>
+                <div class="info"> 905-615-4653</div>
+                <div class="info">1190 Dixie Rd, Mississauga, ON L5E 2P4</div>
+            </div>
+            <div id="detailed-metrics" class="detailed-metrics clearfix"
+                 style="margin-top: 30px; width: 9999px; position: relative;">
+                <!--googleoff: all-->
+                <div class="wind first bx-child" style="width: 75px; float: left; list-style: outside none none;">
+                    <i class="icon icon-wind-n"></i>
+                    <p class="metric">Wind</p><span>20<em>km/h</em> N</span>
+                </div>
+                <div class="windgust bx-child" style="width: 95px; float: left; list-style: outside none none;">
+                    <i class="icon-wind-gust"></i>
+                    <p class="metric">Wind gust</p><span>30<em>km/h</em></span>
+                </div>
+                <div class="humidity bx-child" style="width: 75px; float: left; list-style: outside none none;">
+                    <i class="icon icon-humidity-high"></i>
+                    <p class="metric">Humidity</p><span>52%</span>
+                </div>
+                <div class="sunrise bx-child" style="width: 75px; float: left; list-style: outside none none;">
+                    <i class="icon-sunrise"></i>
+                    <p class="metric">Sunrise</p><span>7:20 AM</span>
+                </div>
+                <div class="sunset bx-child" style="width: 75px; float: left; list-style: outside none none;">
+                    <i class="icon-sunset"></i>
+                    <p class="metric">Sunset</p><span>4:47 PM</span>
+                </div>
+                <div class="pressure bx-child" style="width: 75px; float: left; list-style: outside none none;">
+                    <i class="icon icon-pressure-medium-high"></i>
+                    <div class="pressure-icon"><i class="icon-2"></i></div>
+                    <p class="metric">Pressure</p><span class="icon-pressure_tend-2">103.7<em>kPa</em></span>
+                </div>
+                <div class="visibility bx-child" style="width: 75px; float: left; list-style: outside none none;">
+                    <i class="icon-visibility-unlimited"></i>
+                    <p class="metric">Visibility</p><span>24<em>km</em></span>
+                </div>
+                <div class="ceiling bx-child" style="width: 75px; float: left; list-style: outside none none;">
+                    <i class="icon-ceiling-unlimited"></i>
+                    <p class="metric">Ceiling</p><span>26000<em>ft</em></span>
+                </div><!--googleon: all-->
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Lakeview+Golf+Course&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="600px" height="500px"></iframe>
+        </div>
+        <style>
+            .mapouter {
+                text-align: right;
+                height: 500px;
+                width: 600px;
+            }
+
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 500px;
+                width: 600px;
+            }
+        </style>
+    </div>
+</div>
